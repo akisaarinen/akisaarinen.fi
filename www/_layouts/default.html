@@ -14,10 +14,9 @@
       <script src="/assets/vendor/modernizr.custom.19103.js"></script>
       <title>Personal homepage of Aki Saarinen</title>
     </head>
-
     <body>
+      <header>
         <div id="header-bar" class="grayee-gradient"></div>
-
         <div id="title-wrapper">
             <img id="title-picture" src="assets/img/aki.jpg"/>
             <h1>
@@ -28,51 +27,30 @@
                 </span>
             </h1>
         </div>
-
-        <!--
-        <div id="menu-wrapper">
-          <div>
-            <a href="#contact">Contact</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#work">Work</a> |
-            <a href="#education">Education</a> |
-            <a href="#photos">Photos</a> |
-            <a href="#construction">A tribute to construction workers</a> |
-            <a href="#xkcd302">The truth about xkcd #302</a> |
-            <a href="#links">Links</a>
-
-          </div>
-        </div>
-        -->
-
-        <div id="content-wrapper">
-          {{ content }}
+      </header>
+      <div id="content-wrapper">
+        {{ content }}
       </div>
-
-    <div id="copyright-wrapper">
-        <div class="copyright">
-            HTML and CSS &copy; 2008-2012, Aki Saarinen.
-            <!-- no icons in use right now -->
-            <!-- Icons used in this site are &copy; <a href="http://tango.freedesktop.org">Tango Desktop Project</a>, licenced under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC by-sa 2.5</a>. <br/> -->
-            Fonts by <a href="http://dharmatype.com/">Dharma Type</a> and <a href="http://www.theleagueofmoveabletype.com/">The League of Moveable Type</a>.</br>
-            This page was last modified {{ site.time }}.
-            Hosted by <a href="http://kapsi.fi">Kapsi</a>.
-
-        </div>
-            </div>
-    </div>
-
-    <!-- Google analytics -->
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        var pageTracker = _gat._getTracker("UA-3420513-1");
-        pageTracker._initData();
-        pageTracker._trackPageview();
-    </script>
-
+      <footer>
+          <div class="copyright">
+              HTML and CSS &copy; 2008-2012, Aki Saarinen.
+              <!-- no icons in use right now -->
+              <!-- Icons used in this site are &copy; <a href="http://tango.freedesktop.org">Tango Desktop Project</a>, licenced under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC by-sa 2.5</a>. <br/> -->
+              Fonts by <a href="http://dharmatype.com/">Dharma Type</a> and <a href="http://www.theleagueofmoveabletype.com/">The League of Moveable Type</a>.</br>
+              This page was last modified {{ site.time }}.
+              Hosted by <a href="http://kapsi.fi">Kapsi</a>.
+          </div>
+      <footer>
+      <!-- Google analytics -->
+      <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+          var pageTracker = _gat._getTracker("UA-3420513-1");
+          pageTracker._initData();
+          pageTracker._trackPageview();
+      </script>
 <!-- For convenience these are here too. Why are you looking at the source anyway? :) -->
 <!--
         <p>
