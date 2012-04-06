@@ -1,2 +1,20 @@
+navigation:
+- text: About
+  link: about
+- text: Projects
+  link: projects
+- text: Work
+  link: work
+- text: Education
+  link: education
+- text: Photos
+  link: photos
+- text: Jack The Worker
+  link: jack-the-worker
+- text: "xkcd #302"
+  link: xkcd-302
+- text: Friends
+  link: friends
+
 permalink: pretty
 exclude: ["config.rb", "psd"]

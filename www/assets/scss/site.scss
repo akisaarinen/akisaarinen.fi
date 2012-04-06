@@ -20,23 +20,117 @@
     font-style: normal;
 }
 
-body {
-    margin: 0px;
+.container {
+    color: #444;
     font-family: Georgia, "Times New Roman";
     font-size: 18px;
-    color: #444;
-    background-color: #FFF;
 }
 
-#header-bar {
+#content {
+  section {
+    padding-top: 55px;
+    padding-bottom: 45px;
+    h2 {
+    /*  margin: 0;
+      position: relative;
+      float: left;
+      width: 150px;
+    */
+      font: normal 25px BebasNeueRegular, Helvetica, Arial, serif;
+      color: #d34e23;
+      text-align: right;
+    }
+    ul.spaced-list li {
+      padding-top: 10px;
+      padding-right: 20px;
+    }
+    pre {
+      font-size: 13px;
+      padding-left: 30px;
+    }
+  }
+  .hr {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+header {
+  background-color: #444;
+  height: 160px;
+
+ #about {
+    padding-top: 15px;
+  }
+
+  #title-picture {
+      height: 90px;
+      padding-top: 14px;
+      margin-right: 0;
+      float: right;
+  }
+ 
+  h1 span.greeting {
+      display: block;
+      margin: 0;
+      font: normal 22px ChunkFiveRegular, Rockwell, serif;
+      padding-top: 15px;
+      color: #fd5a24;
+      text-shadow: 4px 4px 0px #000;
+  }
+
+  h1 span.name {
+      display: block;
+      margin: 0;
+      padding-top: 0px;
+      padding-left: 0px;
+      font: normal 50px BebasNeueRegular;
+      color: white;
+      text-shadow: 4px 4px 0px #000;
+  }
+}
+
+footer {
+  background-color: #DDD;
+  color: #888;
+  padding: 40px 0 40px 0;
+  margin: 40px 0 0 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*
+header {
     margin: 0;
     height: 150px;
+    width: 100%;
     background-color: #444;
     clear: both;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  overflow: visible;
+  background-color: #eee;
+  z-index: 99999;
+  .links {
+    margin: 0px auto;
+    width: 920px;
+  }
+  a {
+    display: inline-block;
+    height: 48px;
+    width: 170px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
 #title-wrapper {
-    margin: -150px auto 25px auto;
+    margin: 0px auto 25px auto;
     width: 920px;
     height: 140px;
     color: black;
@@ -101,7 +195,6 @@ div.block h2 {
     float: left;
     font: normal 25px BebasNeueRegular, Helvetica, Arial, serif;
     width: 150px;
-    /*color: #63605C;*/
     color: #d34e23;
     text-align: right;
 }
@@ -163,3 +256,4 @@ div.copyright {
 div.copyright a {
     color:              #555555;
 }
+*/
