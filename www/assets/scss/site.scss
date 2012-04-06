@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('/assets/fonts/BebasNeue-webfont.eot');
+    src: url('/assets/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('/assets/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('/assets/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('/assets/fonts/chunk-webfont.eot');
+    src: url('/assets/fonts/chunk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/chunk-webfont.woff') format('woff'),
+         url('/assets/fonts/chunk-webfont.ttf') format('truetype'),
+         url('/assets/fonts/chunk-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    font-family: Georgia, "Times New Roman";
+    font-size: 18px;
+    color: #444;
+    background-color: #FFF;
+}
+
+#header-bar {
+    margin: 0;
+    height: 150px;
+    background-color: #444;
+    clear: both;
+}
+
+#title-wrapper {
+    margin: -150px auto 25px auto;
+    width: 920px;
+    height: 140px;
+    color: black;
+}
+
+#title-picture {
+    margin: 10px;
+    height: 90px;
+    padding-left: 60px;
+    padding-top: 14px;
+    float: left;
+}
+
+#title-wrapper h1 {
+    margin: 0 200px;
+    padding-top: 6px;
+}
+
+#title-wrapper h1 span.greeting {
+    display: block;
+    margin: 0;
+    font: normal 22px ChunkFiveRegular, Rockwell, serif;
+    padding-top: 15px;
+    color: #fd5a24;
+    text-shadow: 4px 4px 0px #000;
+}
+
+#title-wrapper h1 span.name {
+    display: block;
+    margin: 0;
+    padding-top: 0px;
+    padding-left: 0px;
+    font: normal 50px BebasNeueRegular;
+    color: white;
+    text-shadow: 4px 4px 0px #000;
+}
+
+#content-wrapper {
+    overflow: hidden;
+    height: auto;
+    width: 920px;
+    margin: 0px auto 0;
+}
+
+#content-wrapper div {
+}
+
+div.bottom-hr {
+    border-bottom: 1px solid #ccc;
+}
+
+div.block {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+div.block h2 {
+    margin: 0;
+    position: relative;
+    float: left;
+    font: normal 25px BebasNeueRegular, Helvetica, Arial, serif;
+    width: 150px;
+    /*color: #63605C;*/
+    color: #d34e23;
+    text-align: right;
+}
+
+div.block-content {
+    float: right;
+    width: 710px;
+    padding-right: 10px;
+}
+
+div.block-content ul {
+    margin-left: -15px;
+}
+
+div.block-content ul.spaced-list li {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+
+div.block-content pre {
+    font-size: 13px;
+    padding-left: 30px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #4183C4;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table.phototable {
+	font-size: 0.75em;
+	border-spacing: 10px 10px;
+}
+
+table.phototable td {
+	border: 1px dotted #888;
+	padding: 10px;
+	margin: 30px;
+}
+
+#copyright-wrapper {
+    background: #ddd;
+}
+
+div.copyright {
+    padding: 30px;
+    margin: 0 auto;
+	width:				920px;
+    font-size: 12px;
+	color: 		        #888888;
+    text-align: center;
+}
+
+div.copyright a {
+    color:              #555555;
+}
