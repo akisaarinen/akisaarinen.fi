@@ -9,4 +9,5 @@ Tech stack here is pretty straightforward:
 
 * Jekyll for static site generation
 * Compass for generating CSS from SASS
+* Twitter Bootstrap for responsive CSS styles
 
