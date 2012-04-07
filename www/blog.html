@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div id="content">
+  {% for post in site.posts %}
+  <div class="row title">
+    <h2 class="span2">{{ post.date | date: "%d.%m.%Y" }}</h2>
+    <h2 class="span8 title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </div>
+  <section class="row blog">
+    <div class="span8 offset2">
+    {{ post.content }}
+    </div>
+  </section>
+  {% endfor %}
+</div>

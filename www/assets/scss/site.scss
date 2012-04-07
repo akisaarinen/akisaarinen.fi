@@ -109,42 +109,62 @@ footer {
   section {
     padding-top: 55px;
     padding-bottom: 45px;
-    p {
-      margin: 0 0 20px 0;
-    }
-    h2 {
-      font: normal 25px BebasNeueRegular, Helvetica, Arial, serif;
-      color: #d34e23;
-      text-align: right;
-    }
-    ul { 
-      margin-top: 10px;
-    }
-    ul li {
-      padding-top: 5px;
-    }
-    ul.spaced-list li {
-      padding-top: 15px;
-      padding-right: 20px;
-      font-size: 16px;
-      line-height: 20px;
-    }
-    pre {
-      font-size: 13px;
-      padding-left: 30px;
-      margin: 0 0 20px 0;
-    }
-    table.phototable {
-      font-size: 13px;
-      border-spacing: 10px 10px;
-      margin: 0 0 20px 0;
-    }
+  }
+  section.blog {
+    padding: 10px 0;
+  }
+  .back {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    margin: 0 0 20px 0;
+  }
+  h2, h3 {
+    font: normal 25px BebasNeueRegular, Helvetica, Arial, serif;
+    color: #d34e23;
+    text-align: right;
+  }
+  h4 {
+    font: bold 20px Georgia;
+    margin: 20px 0;
+  }
+  h2.title {
+    font: bold 25px Georgia;
+    color: #444;
+    text-align: left;
+  }
+  div.title {
+    margin-top: 30px;
+  }
+  ul { 
+    margin-top: 10px;
+  }
+  ul li {
+    padding-top: 5px;
+  }
+  ul.spaced-list li {
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  pre {
+    font-size: 13px;
+    padding-left: 30px;
+    margin: 0 0 20px 0;
+  }
+  table.phototable {
+    font-size: 13px;
+    border-spacing: 10px 10px;
+    margin: 0 0 20px 0;
+  }
 
-    table.phototable td {
-      border: 1px dotted #888;
-      padding: 10px;
-      margin: 30px;
-    }
+  table.phototable td {
+    border: 1px dotted #888;
+    padding: 10px;
+    margin: 30px;
   }
   .hr {
     border-bottom: 1px solid #ccc;
