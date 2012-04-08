@@ -58,8 +58,8 @@ I was all finished, though, I also successfully booted up Eclair with radios
 were cause by other factors at the time. 
 
 If you run into trouble you can't figure out, you can try downgrading the
-radio, some checksums of working radio images available in [my other
-post](http://blog.akisaarinen.fi/android-radio-images-for-google-nexus-one).
+radio, some checksums of working radio images available in 
+[my other post]({% post_url 2011-08-08-android-radio-firmware-checksums-for-google-nexus-one %}).
 
 #### Getting a kernel with SLCD support
 
@@ -102,7 +102,9 @@ You can download the stock image for Android 2.1 from
 Official OS
 Image](http://dl4.htc.com/RomCode/Source_and_Binaries/NexusOne_ERE36B_TMOUS.zip).
 
-In order to flash the zip with 'fastboot update NexusOne_ERE36B_TMOUS.zip', you need to unzip the package, modify android-info.txt so that you allow the newer bootloader and microp versions (and radio if you didn't downgrade):
+In order to flash the zip with 'fastboot update NexusOne_ERE36B_TMOUS.zip', you
+need to unzip the package, modify android-info.txt so that you allow the newer
+bootloader and microp versions (and radio if you didn't downgrade):
 
     require version-bootloader=0.33.2012|0.33.0012|0.35.0017
     require version-microp=0b15|0c15
