@@ -2,13 +2,8 @@
 layout: default
 ---
 <div id="content">
-  <div class="row">
-    <div class="span8 offset2 back">
-      <a href="/blog/">&laquo; Back to blog</a>
-    </div>
-  </div>
   <div class="row title">
-    <h2 class="span2">{{ page.date | date: "%d.%m.%Y" }}</h2>
+    <h2 class="span2">{{ page.date | date: "%b %d, %Y" }}</h2>
     <h2 class="span8 title">{{ page.title }}</h2>
   </div>
   <section class="row blog">
@@ -18,7 +13,7 @@ layout: default
   </section>
   <div class="row">
     <div class="span8 offset2 back">
-      <a href="/blog/">&laquo; Back to blog</a>
+      <a href="/blog/">Back to blog</a>
     </div>
   </div>
 </div>
