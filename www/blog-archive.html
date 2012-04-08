@@ -1,0 +1,21 @@
+---
+title: Blog archive
+layout: default
+---
+<div id="content">
+  <div class="row title">
+    <div class="span8 offset2">
+      <p>This blog archive contains links to all my posts. For latest posts, check <a href="/blog">the blog</a>.</p>
+      <ul>
+      {% for post in site.posts %}
+          <li>
+            {{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="tags">
+            Tags: {{ post.tags | join: ", " }}
+            </span>
+          </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

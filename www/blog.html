@@ -3,6 +3,9 @@ title: Blog
 layout: default
 ---
 <div id="content">
+  <div class="row title">
+      <div class="span8 offset2">Welcome to my blog. Newest posts are shown here, <a href="/blog-archive">archive</a> contains the rest.</div>
+  </div>
   {% for post in site.posts %}
   <div class="row title">
     <h2 class="span2">{{ post.date | date: "%d.%m.%Y" }}</h2>
