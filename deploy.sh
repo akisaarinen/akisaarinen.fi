@@ -25,6 +25,6 @@ echo "Taking assets into use..."
 ssh kapsi.fi "mv $WEB/assets $WEB/assets-$DATE && mv $WEB/assets.new $WEB/assets"
 
 echo "Uploading new markup"
-scp $SITE/*.html kapsi.fi:$WEB/
+scp -r $SITE/*.html $SITE/*.xml $SITE/blog/ $SITE/blog-archive/ kapsi.fi:$WEB/
 
 echo "Deploy finished"

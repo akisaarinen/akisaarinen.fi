@@ -4,7 +4,12 @@ layout: default
 ---
 <div id="content">
   <div class="row title">
-      <div class="span8 offset2">Welcome to my blog. <a href="/blog-archive">Archive</a> contains a listing of all posts.</div>
+      <div class="span8 offset2">
+        <p>
+          <a href="http://feeds.feedburner.com/akisaarinen"><img src="/assets/img/feed-icon-14x14.png"> Posts as RSS feed</a>.
+          Also available at the <a href="/blog-archive">archive</a>.
+        </p>
+      </div>
   </div>
   {% for post in site.posts %}
   <div class="row title">
