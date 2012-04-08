@@ -71,8 +71,11 @@ header {
   }
 }
 
-.navbar .container {
-  width: 940px;
+.navbar {
+  margin-bottom: 0px;
+  .container {
+    width: 940px;
+  }
 }
 
 footer {
