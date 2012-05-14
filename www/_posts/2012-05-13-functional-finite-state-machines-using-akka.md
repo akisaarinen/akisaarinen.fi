@@ -59,8 +59,7 @@ concept.
 The idea itself is nothing new. The [Erlang design
 principles](http://www.erlang.org/documentation/doc-4.8.2/doc/design_principles/fsm.html),
 for example, describe how to implement finite-state machines using Erlang
-actors. It is, however, something I have rarely seen as the base for
-application design in the modern world.
+actors. I have, however, rarely seen this as the base for application design.
 
 A few weeks ago I was excited to find [Akka
 FSM](http://doc.akka.io/docs/akka/snapshot/scala/fsm.html), a finite-state
