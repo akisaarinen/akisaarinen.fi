@@ -151,6 +151,7 @@ footer {
   }
   ul { 
     margin-top: 10px;
+    margin-bottom: 19px;
   }
   ul li {
     padding-top: 5px;
@@ -179,5 +180,18 @@ footer {
   }
   .hr {
     border-bottom: 1px solid #ccc;
+  }
+  blockquote {
+    margin: 2em 20px;
+    padding-top: 7px;
+    padding-left: 55px;
+    padding-right: 20px;
+    border: 0;
+    background: transparent url(/assets/img/quote.gif) no-repeat;
+    min-height: 41px;
+  }
+  blockquote p {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
