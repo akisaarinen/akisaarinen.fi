@@ -43,8 +43,8 @@ Here's an example:
       def add(a: Portfolio, b: Portfolio): Portfolio = {
         // whatever (sometimes complex) logic to add two portfolios
       }
-      def substract(a: Portfolio, b: Portfolio): Portfolio = {
-        // whatever (sometimes complex) logic to substract two portfolios
+      def subtract(a: Portfolio, b: Portfolio): Portfolio = {
+        // whatever (sometimes complex) logic to subtract two portfolios
       }
     }
 
