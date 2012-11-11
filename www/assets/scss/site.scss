@@ -37,27 +37,10 @@ a:hover {
 }
 
 header {
-  background-color: #444;
-  height: 160px;
+  height: 90px;
 
- #about {
+ #title-name {
     padding-top: 15px;
-  }
-
-  #title-picture {
-      height: 100px;
-      padding-top: 14px;
-      margin-right: 0;
-      float: right;
-  }
- 
-  h1 span.greeting {
-      display: block;
-      margin: 0;
-      font: normal 22px ChunkFiveRegular, Rockwell, serif;
-      padding-top: 15px;
-      color: #fd5a24;
-      text-shadow: 4px 4px 0px #000;
   }
 
   h1 span.name {
@@ -65,24 +48,43 @@ header {
       margin: 0;
       padding-top: 0px;
       padding-left: 0px;
-      font: normal 50px BebasNeueRegular;
-      color: white;
-      text-shadow: 4px 4px 0px #000;
+      font: normal 60px BebasNeueRegular;
+      color: #397a9d;
+      text-shadow: 2px 2px 0px #ddd;
   }
 }
 
-.navbar {
+#navi {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    font: 25px Yanone Kaffeesatz;
+    display: inline;
+    margin-right: 12px;
+    padding: 10px;
+  }
+  li.active {
+    background: #f8f8f8;
+    border-radius: 10px;
+  }
+  li a {
+    color: #888;
+  }
   margin-bottom: 0px;
   .container {
     width: 940px;
   }
+  #social {
+    text-align: right;
+  }
 }
 
 footer {
-  background-color: #DDD;
   text-align: center;
-  padding: 40px 0 40px 0;
-  margin: 40px 0 0 0;
+  padding: 0;
+  margin: 20px 0 20px 0;
   .container {
     color: #888;
     font-size: 12px;
@@ -90,9 +92,18 @@ footer {
 }
 
 #content {
+  #about p {
+    font-size: 20px;
+  }
+
+  #title-picture {
+    width: 100%;
+  }
+
   #work img {
     margin-bottom: 10px;
   }
+
   #valo-logo {
     float: left;
     margin-right: 20px;
