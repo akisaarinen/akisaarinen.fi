@@ -17,4 +17,5 @@ navigation:
   link: friends
 
 permalink: pretty
+pygments: true
 exclude: ["config.rb", "psd"]
