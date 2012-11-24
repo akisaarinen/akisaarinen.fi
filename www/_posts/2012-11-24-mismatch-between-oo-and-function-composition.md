@@ -59,15 +59,18 @@ look something like this:
 object FP {
   type Number = Double
 
-  def add(x: Number)  = x + 8
-  def sqrt(x: Number) = math.sqrt(x)
-  def sin(x: Number)  = math.sin(x)
+  val add: (Number => Number) = _ + 8
+  val sqrt                    = math.sqrt _
+  val sin                     = math.sin _
 
-  def algorithm = (add(_)) andThen (sqrt(_)) andThen (sin(_))
+  def algorithm = add andThen sqrt andThen sin
 
   val result = algorithm(17)
 }
 {% endhighlight %}
+
+*Note*: I updated the FP version from the original a bit, as suggested by
+Antoine Gourlay in the comments, to make the function composition less clumsy.
 
 #### Where's the difference?
 
