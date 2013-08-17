@@ -1,29 +1,35 @@
-@media (max-width: 767px) {
-  header, footer {
-    margin-left: -20px;
-    padding-left: 20px;
-    margin-right: -20px;
-    padding-right: 20px;
+@media (max-width:979px) {
+  body {
+    max-width: 700px;
   }
-  #content section {
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+  .hidden-phone {
+    display: none !important;
   }
-  #content h2 {
-    text-align: left;
-    margin: 15px 0;
+
+  header {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
-  #content #title-picture { 
-    width: 166px; 
+
+  footer p {
+    font-size: 9px !important;
   }
-  #navi #social { 
-    text-align: left; 
-    margin: 20px 10px;
+
+  #social {
+    margin-top: 15px;
+    text-align: left !important;
+    width: 100%;
   }
-}
-@media (min-width:768px) and (max-width: 979px) {
-}
-@media (min-width:980px) and (max-width: 1199px) {
-}
-@media (min-width: 1200px) {
+
+  #rightpane .pane {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-top: 1px solid #aaa !important;
+
+    h1 {
+      margin: 0 !important;
+    }
+  }
 }
