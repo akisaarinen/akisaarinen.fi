@@ -3,24 +3,23 @@ title: Blog
 layout: default
 ---
 <div id="content">
-  <div class="row title">
-      <div class="span8 offset2">
-        <p>
-          <a href="http://feeds.feedburner.com/akisaarinen"><img src="/assets/img/feed-icon-14x14.png"> Posts as RSS feed</a>.
-          Also available at the <a href="/blog-archive">archive</a>.
-        </p>
-      </div>
-  </div>
   <div class="row">
-    <div class="span8 offset2">
+    <div class="span7">
       <ul>
       {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <span class="date">{{ post.date | date: "%b %Y" }}</span>
       </li>
       {% endfor %}
       </ul>
     </div>
+  </div>  
+  <div class="row">
+      <div class="span7">
+        <p class="rss">
+          <a href="http://feeds.feedburner.com/akisaarinen"><img src="/assets/img/feed-icon-14x14.png"> Posts as RSS feed</a>
+        </p>
+      </div>
   </div>  
 </div>

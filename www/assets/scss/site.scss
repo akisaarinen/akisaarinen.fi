@@ -1,25 +1,3 @@
-@font-face {
-    font-family: 'BebasNeueRegular';
-    src: url('/assets/fonts/BebasNeue-webfont.eot');
-    src: url('/assets/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/BebasNeue-webfont.woff') format('woff'),
-         url('/assets/fonts/BebasNeue-webfont.ttf') format('truetype'),
-         url('/assets/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ChunkFiveRegular';
-    src: url('/assets/fonts/chunk-webfont.eot');
-    src: url('/assets/fonts/chunk-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/chunk-webfont.woff') format('woff'),
-         url('/assets/fonts/chunk-webfont.ttf') format('truetype'),
-         url('/assets/fonts/chunk-webfont.svg#ChunkFiveRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .content, .content p, footer {
   font-family: Georgia, "Times New Roman";
   font-size: 18px;
@@ -35,32 +13,58 @@
   }
 }
 
-header {
-  margin-top:     80px;
-  padding-top:    30px;
-  padding-bottom: 30px;
+header, #rightpane .pane {
+  font-family:      Signika;
+  font-weight:      300;  
+}
 
-  background-color: #999;
-  color:            #eff0e8; 
+#rightpane .pane {
+  margin-top: 30px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #666;
 
-  font-family: Signika;
-  font-size:   24px;
-  font-weight: 300;
-
-  a, a:visited, a:hover { 
-    color: #eff0e8; 
-    text-decoration: none;
+  h1 {
+    margin: 50px 0 20px 0;
   }
+
+  span.first {
+    color: #999;
+  }
+  span.last {
+    color: #444;
+  }
+  .social {
+    padding: 15px 0;
+    font-size: 25px;
+    a { 
+      color:           #888;
+      text-decoration: none;
+    }
+  }
+}
+
+header {
+  font-size:  24px;
+  color:      #444;
+  margin:     50px 0 20px 0;
+  padding:    30px 0;
 
   h1 span {
     font-size: 48px;
   }
-  h1 span.first {
+  span.first {
+    color: #999;
     font-weight: 400;
   }
-  h1 span.last {
+  span.last {
     color: #3e3e3e;
     font-weight: 700;
+  }  
+
+  a, a:visited, a:hover { 
+    color: #444; 
+    text-decoration: none;
   }
 
   #navi {
@@ -78,8 +82,9 @@ header {
     padding-top: 15px;
     text-align: right;
     font-size: 25px;
-  }  
+  }
 }
+
 
 footer {
   text-align: center;
@@ -92,38 +97,11 @@ footer {
 }
 
 #content {
-  #about p {
+  .rss {
+    margin-top: 30px;
     font-size: 20px;
   }
-
-  #title-picture {
-    width: 100%;
-  }
-
-  #work img {
-    margin-bottom: 10px;
-  }
-
-  #valo-logo {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
-  #reaktor-logo {
-    margin-left: 15px;
-    margin-bottom: 5px;
-    float: right;
-  }
-  #aalto-logo {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
-  #imagesoft-logo {
-    float: right;
-    margin-left: 15px;
-    margin-bottom: 5px;
-  }
+  
   section {
     padding-top: 55px;
     padding-bottom: 45px;
@@ -144,10 +122,15 @@ footer {
     margin: 0 0 20px 0;
   }
   h2 {
-    color: #d34e23;
-    font-family: Signika;
-    font-size:   30px;
-    font-weight: 300;
+    font-family:    Signika;
+    font-size:      40px;
+    font-weight:    400;
+    margin:         40px 0 40px 0;
+    line-height:    50px;
+  }
+  h3 {
+    margin: 0 0 20px 0;
+    color:  #666;
   }
   h4 {
     font: bold 20px Georgia;
@@ -156,11 +139,13 @@ footer {
 
   span.date {
     float: right;
+    color: #888;
   }
 
   div.title {
     margin-top: 30px;
   }
+
   ul { 
     margin-top: 10px;
     margin-bottom: 19px;
@@ -179,17 +164,7 @@ footer {
     padding-left: 30px;
     margin: 0 0 20px 0;
   }
-  table.phototable {
-    font-size: 13px;
-    border-spacing: 10px 10px;
-    margin: 0 0 20px 0;
-  }
 
-  table.phototable td {
-    border: 1px dotted #888;
-    padding: 10px;
-    margin: 30px;
-  }
   .hr {
     border-bottom: 1px solid #ccc;
   }
@@ -205,5 +180,12 @@ footer {
   blockquote p {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .end-of-post {
+    border-top:    1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 20px 0;
+    margin: 20px 0;
   }
 }

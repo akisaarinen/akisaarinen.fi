@@ -1,28 +1,55 @@
 ---
 layout: base
 ---
-<div id="content" class="content">
-  <div class="row title">
-    <h2 class="span2">{{ page.date | date: "%b %d, %Y" }}</h2>
-    <h2 class="span8 title">{{ page.title }}</h2>
-  </div>
-  <section class="row blog">
-    <div class="span8 offset2">
-    {{ content }}
-    </div>
-  </section>
+<div class="container content" id="content">
   <div class="row">
-    <div class="span8 offset2 back">
-      <a href="/blog/">Back to blog</a>
+    <div class="span7">
+      <h2>{{ page.title }}</h2>
+      <h3>{{ page.date | date: "%b %d, %Y" }}</h3>
+      <section class="blog">
+        {{ content }}
+      </section>
+    </div>
+    <div id="rightpane" class="span3">
+      <div class="pane">
+        <h1 class="bigname">
+          <a href="/"><span class="first">aki</span><span class="last">saarinen</span></a>
+        </h1>
+        <p>
+        A software guy exploring technical things.
+        </p>
+        <p>
+        <a href="/">More about Aki</a>
+        </p>
+        <p><a href="https://twitter.com/akisaarinen/">Follow @akisaarinen<br/></a></p>
+        <p class="social">
+          <a class="ss-rss" href="http://feeds.feedburner.com/akisaarinen"></a>
+          <a class="ss-twitter" href="https://twitter.com/akisaarinen"></a>
+          <a class="ss-octocat" href="https://github.com/akisaarinen"></a>
+          <a class="ss-linkedin" href="https://www.linkedin.com/in/akisaarinen"></a>
+        </p>
+      <hr>
+      <p>
+        <a href="/blog">See all posts</a>
+      </p>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="span8 offset2">
+    <div class="span7">
+      <div class="end-of-post">
+        Thanks for reading.
+        If you liked this, leave a comment or reach out to me at <a href="https://twitter.com">Twitter</a> or <a href="/">email</a>.
+        You can take a look at my other posts <a href="/blog/">here</a>.
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span7">
       <div id="disqus_thread"></div>
     </div>
   </div>
 </div>
-
 <script type="text/javascript">
   var disqus_shortname = 'akisaarinen';
   (function() {
