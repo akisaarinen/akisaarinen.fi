@@ -20,65 +20,65 @@
     font-style: normal;
 }
 
-body, .container, p {
-    color: #444;
-    font-family: Georgia, "Times New Roman";
-    font-size: 18px;
-    line-height: 22px;
-}
+.content, .content p, footer {
+  font-family: Georgia, "Times New Roman";
+  font-size: 18px;
+  line-height: 22px;
+  color: #444;
 
-a, a:visited {
-    text-decoration: none;
-    color: #4183C4;
-}
-
-a:hover {
-    text-decoration: underline;
+  a, a:visited {
+      text-decoration: none;
+      color: #4183C4;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
 }
 
 header {
-  height: 90px;
+  margin-top:     80px;
+  padding-top:    30px;
+  padding-bottom: 30px;
 
- #title-name {
-    padding-top: 15px;
+  background-color: #999;
+  color:            #eff0e8; 
+
+  font-family: Signika;
+  font-size:   24px;
+  font-weight: 300;
+
+  a, a:visited, a:hover { 
+    color: #eff0e8; 
+    text-decoration: none;
   }
 
-  h1 span.name {
-      display: block;
-      margin: 0;
-      padding-top: 0px;
-      padding-left: 0px;
-      font: normal 60px BebasNeueRegular;
-      color: #397a9d;
-      text-shadow: 2px 2px 0px #ddd;
+  h1 span {
+    font-size: 48px;
   }
-}
+  h1 span.first {
+    font-weight: 400;
+  }
+  h1 span.last {
+    color: #3e3e3e;
+    font-weight: 700;
+  }
 
-#navi {
-  ul {
-    margin: 0;
-    padding: 0;
+  #navi {
+    ul {
+      margin:  10px 0 0 0;
+      padding: 0;
+    }
+    li {
+      display:      inline;
+      margin-right: 12px;
+    }
   }
-  li {
-    font: 25px Yanone Kaffeesatz;
-    display: inline;
-    margin-right: 12px;
-    padding: 10px;
-  }
-  li.active {
-    background: #f8f8f8;
-    border-radius: 10px;
-  }
-  li a {
-    color: #888;
-  }
-  margin-bottom: 0px;
-  .container {
-    width: 940px;
-  }
+
   #social {
+    padding-top: 15px;
     text-align: right;
-  }
+    font-size: 25px;
+  }  
 }
 
 footer {
