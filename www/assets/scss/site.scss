@@ -143,20 +143,21 @@ footer {
   p {
     margin: 0 0 20px 0;
   }
-  h2, h3 {
-    font: normal 25px BebasNeueRegular, Helvetica, Arial, serif;
+  h2 {
     color: #d34e23;
-    text-align: right;
+    font-family: Signika;
+    font-size:   30px;
+    font-weight: 300;
   }
   h4 {
     font: bold 20px Georgia;
     margin: 20px 0;
   }
-  h2.title {
-    font: bold 25px Georgia;
-    color: #444;
-    text-align: left;
+
+  span.date {
+    float: right;
   }
+
   div.title {
     margin-top: 30px;
   }

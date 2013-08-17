@@ -11,18 +11,16 @@ layout: default
         </p>
       </div>
   </div>
-  {% for post in site.posts %}
-  <div class="row title">
-    <h2 class="span2">{{ post.date | date: "%b %d, %Y" }}</h2>
-    <h2 class="span8 title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  </div>
-  <section class="row blog">
+  <div class="row">
     <div class="span8 offset2">
-    {{ post.content }}
+      <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+      </li>
+      {% endfor %}
+      </ul>
     </div>
-  </section>
-  {% if post.previous %}
-  <div class="row"><div class="span9 offset1 hr"></div></div>
-  {% endif %}
-  {% endfor %}
+  </div>  
 </div>
